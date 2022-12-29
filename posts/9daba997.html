@@ -417,7 +417,7 @@
       Fluid.utils.createCssLink('https://lib.baomitu.com/waline/2.14.1/waline.min.css')
       Fluid.utils.createScript('https://lib.baomitu.com/waline/2.14.1/waline.min.js', function() {
         var options = Object.assign(
-          {"serverURL":"https://waline.chengzhoucr.tk/","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
+          {"serverURL":"https://waline.chengzhoucr.tk/","path":"window.location.pathname","meta":["nick","mail"],"requiredMeta":["nick"],"lang":"zh-CN","reaction":true,"login":"force","emoji":["https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":[5,100],"pageSize":3,"imageUploader":false,"search":false},
           {
             el: '#waline',
             path: window.location.pathname
