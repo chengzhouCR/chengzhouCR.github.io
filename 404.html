@@ -28,8 +28,6 @@
 <meta name="twitter:card" content="summary_large_image">
   
   
-    <meta name="referrer" content="no-referrer-when-downgrade">
-  
   
   <title>页面不存在 - ChengZhouCR&#39;s Blog</title>
 
@@ -67,7 +65,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"chengzhoucr.tk","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"ca7a508e610f6fbc2f0984bcd4547dd5","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"chengzhoucr.tk","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":60,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"ca7a508e610f6fbc2f0984bcd4547dd5","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"XSBS3Y0d7F3A9W47QOREnRC6-MdYXbMMI","app_key":"M0lztcGUAjoZHxQKcduESyer","server_url":null,"path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -103,6 +101,8 @@
 
   
 
+  
+    
   
 
 
@@ -164,6 +164,18 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>全部文章</span>
@@ -206,7 +218,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/%E8%83%8C%E6%99%AF/%E9%A6%96%E9%A1%B5.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://jsd.cdn.zzko.cn/gh/chengzhouCR/blogimage@main/img/%E9%A6%96%E9%A1%B5.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -289,20 +301,21 @@
 
   
     
-      <span id="busuanzi_container_site_pv" style="display: none">
+      <span id="leancloud-site-pv-container" style="display: none">
         总访问量 
-        <span id="busuanzi_value_site_pv"></span>
+        <span id="leancloud-site-pv"></span>
          次
       </span>
     
     
-      <span id="busuanzi_container_site_uv" style="display: none">
+      <span id="leancloud-site-uv-container" style="display: none">
         总访客数 
-        <span id="busuanzi_value_site_uv"></span>
+        <span id="leancloud-site-uv"></span>
          人
       </span>
     
     
+
   
 </div>
 
@@ -312,7 +325,7 @@
       <script>
       var now = new Date();
       function createtime(){
-          var grt= new Date("12/27/2022 8:30:00");//此处修改你的建站时间或者网站上线时间
+          var grt= new Date("12/31/2022 22:50:00");//此处修改你的建站时间或者网站上线时间
           now.setTime(now.getTime()+250);
           days = (now - grt ) / 1000 / 60 / 60 / 24;
           dnum = Math.floor(days);
@@ -331,7 +344,7 @@
           if(String(snum).length ==1 ){
                     snum = "0" + snum;
           }
-          document.getElementById("timeDate").innerHTML = "🚀已运行:"+dnum+"&nbsp天";  //此次自定义显示内容
+          document.getElementById("timeDate").innerHTML = " (๑•̀ㅂ•́)و✧ 已运行:"+dnum+"&nbsp天";  //此次自定义显示内容
           document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
       }
       setInterval("createtime()",250);
@@ -395,9 +408,9 @@
 
 
 
-  <script  src="/js/local-search.js" ></script>
+  <script defer src="/js/leancloud.js" ></script>
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+  <script  src="/js/local-search.js" ></script>
 
 
 
