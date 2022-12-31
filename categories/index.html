@@ -7,7 +7,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.proxy.ustclug.org/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
   <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -27,6 +26,8 @@
 <meta property="article:author" content="ChengZhouCR">
 <meta name="twitter:card" content="summary_large_image">
   
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
   
   
   <title>分类 - ChengZhouCR&#39;s Blog</title>
@@ -345,41 +346,16 @@
 
   <footer>
     <div class="footer-inner">
-<footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-    <div>
   
-  <div class="statistics">
-  
-  
-
-  
-    
-      <span id="leancloud-site-pv-container" style="display: none">
-        总访问量 
-        <span id="leancloud-site-pv"></span>
-         次
-      </span>
-    
-    
-      <span id="leancloud-site-uv-container" style="display: none">
-        总访客数 
-        <span id="leancloud-site-uv"></span>
-         人
-      </span>
-    
-    
-
-  
-</div>
-
-	
+    <div class="footer-content">
+	 <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+	<div>
       <span id="timeDate">载入天数...</span>
       <span id="times">载入时分秒...</span>
       <script>
       var now = new Date();
       function createtime(){
-          var grt= new Date("12/31/2022 22:50:00");//此处修改你的建站时间或者网站上线时间
+          var grt= new Date("01/01/2023 00:00:00");//此处修改你的建站时间或者网站上线时间
           now.setTime(now.getTime()+250);
           days = (now - grt ) / 1000 / 60 / 60 / 24;
           dnum = Math.floor(days);
@@ -398,22 +374,42 @@
           if(String(snum).length ==1 ){
                     snum = "0" + snum;
           }
-          document.getElementById("timeDate").innerHTML = " (๑•̀ㅂ•́)و✧ 已运行:"+dnum+"&nbsp天";  //此次自定义显示内容
+          document.getElementById("timeDate").innerHTML = "(๑•̀ㅂ•́)و✧ 已运行:"+dnum+"&nbsp天";  //此次自定义显示内容
           document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
       }
       setInterval("createtime()",250);
       </script>
     </div>
-  </div>
-    <div>©2023<a href="/">  ChengZhouCR's Blog</a></div>
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
   
   
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
   
 </div>
+
+  
+  
+  
+ </div>
+    ©2023<a href="/">  ChengZhouCR's Blog</a></div
 
   </footer>
 
@@ -465,6 +461,8 @@
   <script defer src="/js/leancloud.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
