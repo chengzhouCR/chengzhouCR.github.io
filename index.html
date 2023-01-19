@@ -394,9 +394,9 @@
           seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
           snum = Math.round(seconds);
           if(String(snum).length ==1 ){
-                    snum = "0" + snum;
+                     snum = "0" + snum;
           }
-          document.getElementById("timeDate").innerHTML = 本站已运行:"+dnum+"&nbsp天";  //此次自定义显示内容
+          document.getElementById("timeDate").innerHTML = "本站已运行: "+dnum+"&nbsp天";  //此次自定义显示内容
           document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
       }
       setInterval("createtime()",250);
@@ -414,7 +414,7 @@
   <div>
 	<a href="https://icp.gov.moe/?keyword=20235240" target="_blank"> <img src= /img/moe.png />萌ICP备20235240号</a>
 	|
-	<a href="https://ipw.cn/ipv6webcheck/?site=www.chengzhoucr.tk" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-certified-s3.svg" srcset="/img/loading.gif" lazyload></a>
+	<a href="https://ipw.cn/ipv6webcheck/?site=www.chengzhoucr.tk" title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-certified-s3.svg" srcset="/img/loading.gif" lazyload></a></div>
 
   </footer>
 
