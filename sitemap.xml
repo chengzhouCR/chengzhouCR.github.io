@@ -2,18 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.chengzhoucr.top/posts/1e450347</loc>
+    <loc>https://www.chengzhoucr.top/about/</loc>
     
-    <lastmod>2023-01-20</lastmod>
+    <lastmod>2023-02-11</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.chengzhoucr.top/about/</loc>
+    <loc>https://www.chengzhoucr.top/messageboard/</loc>
     
-    <lastmod>2023-01-20</lastmod>
+    <lastmod>2023-02-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chengzhoucr.top/tags/</loc>
+    
+    <lastmod>2023-02-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chengzhoucr.top/categories/</loc>
+    
+    <lastmod>2023-02-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chengzhoucr.top/link/</loc>
+    
+    <lastmod>2023-02-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chengzhoucr.top/posts/83dcefb7</loc>
+    
+    <lastmod>2023-02-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,26 +58,12 @@
 
   <url>
     <loc>https://www.chengzhoucr.top/</loc>
-    <lastmod>2023-02-04</lastmod>
+    <lastmod>2023-02-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
-  <url>
-    <loc>https://www.chengzhoucr.top/tags/%E6%96%B0%E6%98%A5%E5%BF%AB%E4%B9%90/</loc>
-    <lastmod>2023-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://www.chengzhoucr.top/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2023-02-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 </urlset>
