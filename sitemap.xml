@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.chengzhoucr.top/css/modify.css</loc>
+    
+    <lastmod>2023-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chengzhoucr.top/link/</loc>
+    
+    <lastmod>2023-02-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.chengzhoucr.top/about/</loc>
     
     <lastmod>2023-02-11</lastmod>
@@ -32,15 +50,6 @@
     <loc>https://www.chengzhoucr.top/categories/</loc>
     
     <lastmod>2023-02-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chengzhoucr.top/link/</loc>
-    
-    <lastmod>2023-02-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
