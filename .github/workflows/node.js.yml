@@ -1,0 +1,18 @@
+name: master
+on:
+  push:
+      branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Purge JsDelivr CDN
+      run: |
+        curl https://purge.jsdelivr.net/gh/chengzhouCR/chengzhouCR.github.io@master/css/index.css
+        curl https://purge.jsdelivr.net/gh/chengzhouCR/chengzhouCR.github.io@master/js/main.js
+        curl https://purge.jsdelivr.net/gh/chengzhouCR/chengzhouCR.github.io@master/js/utils.js
+        curl https://purge.jsdelivr.net/gh/chengzhouCR/chengzhouCR.github.io@master/js/tw_cn.js
+        curl https://purge.jsdelivr.net/gh/chengzhouCR/chengzhouCR.github.io@master/js/search/local-search.js
+        curl https://purge.jsdelivr.net/gh/chengzhouCR/chengzhouCR.github.io@master/search.xml
+
