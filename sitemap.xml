@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.chengzhoucr.top/workflows/blog.json</loc>
+    
+    <lastmod>2023-02-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.chengzhoucr.top/css/modify.css</loc>
     
     <lastmod>2023-02-19</lastmod>
@@ -67,7 +76,7 @@
 
   <url>
     <loc>https://www.chengzhoucr.top/</loc>
-    <lastmod>2023-02-19</lastmod>
+    <lastmod>2023-02-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
