@@ -97,11 +97,7 @@ rmf.copyWordsLink = function () {
     txa.select();
     document.execCommand("Copy");
     document.body.removeChild(txa);
-    Snackbar.show({
-        text: '链接复制成功！快去分享吧！',
-        pos: 'top-right',
-        showAction: false
-    });
+    btf.snackbarShow('链接复制成功，快去分享吧！') 
 }
 rmf.switchReadMode = function () {
     const $body = document.body
@@ -123,7 +119,7 @@ rmf.switchReadMode = function () {
 //复制选中文字
 rmf.copySelect = function () {
     document.execCommand('Copy', false, null);
-    //这里可以写点东西提示一下 已复制
+btf.snackbarShow('复制成功！') 
 }
 
 //回到顶部
