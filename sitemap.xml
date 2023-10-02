@@ -4,16 +4,7 @@
   <url>
     <loc>https://www.chengzhoucr.top/about/</loc>
     
-    <lastmod>2023-02-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.chengzhoucr.top/posts/1ad5be0d</loc>
-    
-    <lastmod>2023-02-24</lastmod>
+    <lastmod>2023-08-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +13,16 @@
   <url>
     <loc>https://www.chengzhoucr.top/css/modify.css</loc>
     
-    <lastmod>2023-02-19</lastmod>
+    <lastmod>2023-07-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.chengzhoucr.top/posts/83dcefb7/</loc>
+    
+    <lastmod>2023-07-29</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -64,19 +64,10 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://www.chengzhoucr.top/posts/83dcefb7</loc>
-    
-    <lastmod>2023-02-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://www.chengzhoucr.top/</loc>
-    <lastmod>2023-03-04</lastmod>
+    <lastmod>2023-10-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

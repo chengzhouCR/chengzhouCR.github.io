@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>ChengZhouCR&#39;s blog</title>
+  <title>乘舟若晚</title>
   
-  
+  <subtitle>心之所向，必有曙光！</subtitle>
   <link href="https://www.chengzhoucr.top/atom.xml" rel="self"/>
   
   <link href="https://www.chengzhoucr.top/"/>
-  <updated>2023-02-24T12:32:14.550Z</updated>
+  <updated>2023-07-29T13:12:12.600Z</updated>
   <id>https://www.chengzhoucr.top/</id>
   
   <author>
@@ -17,24 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2</title>
-    <link href="https://www.chengzhoucr.top/posts/1ad5be0d"/>
-    <id>https://www.chengzhoucr.top/posts/1ad5be0d</id>
-    <published>2023-02-24T12:32:08.000Z</published>
-    <updated>2023-02-24T12:32:14.550Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>1</title>
-    <link href="https://www.chengzhoucr.top/posts/83dcefb7"/>
-    <id>https://www.chengzhoucr.top/posts/83dcefb7</id>
-    <published>2023-02-10T13:31:16.000Z</published>
-    <updated>2023-02-10T13:31:27.141Z</updated>
+    <link href="https://www.chengzhoucr.top/posts/83dcefb7/"/>
+    <id>https://www.chengzhoucr.top/posts/83dcefb7/</id>
+    <published>2023-07-29T13:11:49.000Z</published>
+    <updated>2023-07-29T13:12:12.600Z</updated>
     
     
     
