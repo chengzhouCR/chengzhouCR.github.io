@@ -142,7 +142,7 @@
       }
     }
     detectApple()
-    })(window)</script><meta name="baidu-site-verification" content="codeva-qQdjSXWx7w"><meta name="msvalidate.01" content="659DE7E0035C84826D9C1EB29375D853"><link rel="stylesheet" href="/css/preloader.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&amp;display=swap"><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/max.css"><link rel="stylesheet" href="/css/iconfont.css"><link rel="stylesheet" href="/css/rightmenu.css"><link rel="stylesheet" href="/css/1clock.min.css"><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="乘舟若晚" type="application/atom+xml"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
+    })(window)</script><meta name="baidu-site-verification" content="codeva-qQdjSXWx7w"><meta name="msvalidate.01" content="659DE7E0035C84826D9C1EB29375D853"><link rel="stylesheet" href="/css/preloader.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&amp;display=swap"><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/max.css"><link rel="stylesheet" href="/css/iconfont.css"><link rel="stylesheet" href="/css/rightmenu.css"><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="乘舟若晚" type="application/atom+xml"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
   endLoading: () => {
     document.body.style.overflow = 'auto';
     document.getElementById('loading-box').classList.add("loaded")
@@ -224,95 +224,7 @@ document.addEventListener('DOMContentLoaded', panguInit)</script><script src="ht
       loadTwikoo()
     }
   }
-})()</script></div><script>window.addEventListener('load', () => {
-  const changeContent = (content) => {
-    if (content === '') return content
-
-    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
-    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
-    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
-    content = content.replace(/<[^>]+>/g,"") // remove html tag
-
-    if (content.length > 150) {
-      content = content.substring(0,150) + '...'
-    }
-    return content
-  }
-
-  const getComment = () => {
-    const runTwikoo = () => {
-      twikoo.getRecentComments({
-        envId: 'https://twikoo.chengzhoucr.top',
-        region: '',
-        pageSize: 6,
-        includeReply: true
-      }).then(function (res) {
-        const twikooArray = res.map(e => {
-          return {
-            'content': changeContent(e.comment),
-            'avatar': e.avatar,
-            'nick': e.nick,
-            'url': e.url + '#' + e.id,
-            'date': new Date(e.created).toISOString()
-          }
-        })
-
-        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
-        generateHtml(twikooArray)
-      }).catch(function (err) {
-        const $dom = document.querySelector('#card-newest-comments .aside-list')
-        $dom.innerHTML= "无法获取评论，请确认相关配置是否正确"
-      })
-    }
-
-    if (typeof twikoo === 'object') {
-      runTwikoo()
-    } else {
-      getScript('https://cdn.staticfile.org/twikoo/1.6.21/twikoo.all.min.js').then(runTwikoo)
-    }
-  }
-
-  const generateHtml = array => {
-    let result = ''
-
-    if (array.length) {
-      for (let i = 0; i < array.length; i++) {
-        result += '<div class=\'aside-list-item\'>'
-
-        if (true) {
-          const name = 'data-lazy-src'
-          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'></a>`
-        }
-        
-        result += `<div class='content'>
-        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
-        <div class='name'><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
-        </div></div>`
-      }
-    } else {
-      result += '没有评论'
-    }
-
-    let $dom = document.querySelector('#card-newest-comments .aside-list')
-    $dom.innerHTML= result
-    window.lazyLoadInstance && window.lazyLoadInstance.update()
-    window.pjax && window.pjax.refresh($dom)
-  }
-
-  const newestCommentInit = () => {
-    if (document.querySelector('#card-newest-comments .aside-list')) {
-      const data = saveToLocal.get('twikoo-newest-comments')
-      if (data) {
-        generateHtml(JSON.parse(data))
-      } else {
-        getComment()
-      }
-    }
-  }
-
-  newestCommentInit()
-  document.addEventListener('pjax:complete', newestCommentInit)
-})</script><script async="" type="text/javascript" src="https://cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script><script defer="" type="text/javascript" src="/js/rightmenu.js"></script><script src="https://cdn.staticfile.org/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+})()</script></div><script async="" type="text/javascript" src="https://cdn.staticfile.org/jquery/3.7.0/jquery.min.js"></script><script defer="" type="text/javascript" src="/js/rightmenu.js"></script><script src="https://cdn.staticfile.org/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 
 var pjax = new Pjax({
   elements: 'a:not([target="_blank"])',
@@ -379,4 +291,4 @@ document.addEventListener('pjax:error', (e) => {
   if (e.request.status === 404) {
     pjax.loadUrl('/404.html')
   }
-})</script></div><script data-pjax="">function butterfly_clock_anzhiyu_injector_config(){var a=document.getElementsByClassName("sticky_layout")[0];console.log("已挂载butterfly_clock_anzhiyu"),a&&a.insertAdjacentHTML("afterbegin",'<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="/img/background/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>')}for(var elist="null".split(","),cpage=location.pathname,epage="all",qweather_key="157c7cd2788d4709a54d254a063fe7e7",gaud_map_key="c0a08b3aec0e77bf1a383d65edaa3a5b# 高得地图web服务key",baidu_ak_key="undefined",flag=0,clock_rectangle="112.982279,28.19409",clock_default_rectangle_enable="false",i=0;i<elist.length;i++)cpage.includes(elist[i])&&flag++;("all"===epage&&0==flag||epage===cpage)&&butterfly_clock_anzhiyu_injector_config()</script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script data-pjax="" src="/js/clock.min.js"></script></body></html>
+})</script></div></body></html>
