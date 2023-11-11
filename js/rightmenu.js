@@ -143,79 +143,7 @@ document.body.addEventListener('touchmove', function(e){
 function popupMenu() {
     //window.oncontextmenu=function(){return false;}
     window.oncontextmenu = function (event) {
-        if(event.ctrlKey||document.body.clientWidth<900) return true;
-        $('.rightMenu-group.hide').hide();
-        if (document.getSelection().toString()) {
-            $('#menu-text').show();
-        }
-        if (document.getElementById('post')) {
-            $('#menu-post').show();
-        } else {
-            if (document.getElementById('page')) {
-                $('#menu-post').show();
-            }
-        }
-        var el = window.document.body;
-        el = event.target;
-        var a=/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/
-        if (a.test(window.getSelection().toString())&&el.tagName!="A"){
-            $('#menu-too').show()
-        }
-        if (el.tagName == 'A') {
-            $('#menu-to').show()
-            rmf.open = function () {
-                if(el.href.indexOf("http://")==-1&&el.href.indexOf("https://")==-1||el.href.indexOf("yisous.xyz")!=-1){
-                    pjax.loadUrl(el.href)
-                }
-                else{
-                    location.href = el.href
-                }
-            }
-            rmf.openWithNewTab = function () {
-                window.open(el.href);
-                // window.location.reload();
-            }
-            rmf.copyLink = function () {
-                let url = el.href
-                let txa = document.createElement("textarea");
-                txa.value = url;
-                document.body.appendChild(txa)
-                txa.select();
-                document.execCommand("Copy");
-                document.body.removeChild(txa);
-            }
-        }
-        if (el.tagName == 'IMG') {
-            $('#menu-img').show()
-            rmf.openWithNewTab = function () {
-                window.open(el.src);
-                // window.location.reload();
-            }
-            rmf.click = function () {
-                el.click()
-            }
-            rmf.copyLink = function () {
-                let url = el.src
-                let txa = document.createElement("textarea");
-                txa.value = url;
-                document.body.appendChild(txa)
-                txa.select();
-                document.execCommand("Copy");
-                document.body.removeChild(txa);
-            }
-            rmf.saveAs=function(){
-                var a = document.createElement('a');
-                var url = el.src;
-                var filename = url.split("/")[-1];
-                a.href = url;
-                a.download = filename;
-                a.click();
-                window.URL.revokeObjectURL(url);
-            }
-        } else if (el.tagName == "TEXTAREA" || el.tagName == "INPUT") {
-            $('#menu-paste').show();
-            // rmf.paste=function(){
-            //     input.addEventListener('paste', async event => {
+        if(event.ctrlKey||document.body.clientWidth<900) return true; $('.rightmenu-group.hide').hide(); if (document.getselection().tostring()) { $('#menu-text').show(); } (document.getelementbyid('post')) $('#menu-post').show(); else (document.getelementbyid('page')) var el="window.document.body;" a="/^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\*\+,;=.]+$/" (a.test(window.getselection().tostring())&&el.tagname!="A" ){ $('#menu-too').show() (el.tagname="=" 'a') $('#menu-to').show() rmf.open="function" () if(el.href.indexof("http: ")="=-1&&el.href.indexOf("https://")==-1||el.href.indexOf("yisous.xyz")!=-1){" pjax.loadurl(el.href) else{ location.href="el.href" rmf.openwithnewtab="function" window.open(el.href); window.location.reload(); rmf.copylink="function" let url="el.href" txa="document.createElement("textarea");" txa.value="url;" document.body.appendchild(txa) txa.select(); document.execcommand("copy"); document.body.removechild(txa); 'img') $('#menu-img').show() window.open(el.src); rmf.click="function" el.click() rmf.saveas="function(){" filename="url.split("/")[-1];" a.href="url;" a.download="filename;" a.click(); window.url.revokeobjecturl(url); "textarea" || el.tagname="=" "input") $('#menu-paste').show(); rmf.paste="function(){" input.addeventlistener('paste', async event> {
             //         event.preventDefault();
             //         const text = await navigator.clipboard.readText();
             //         el.value+=text;
@@ -305,4 +233,4 @@ function addLongtabListener(target, callback) {
     }
 }
 
-addLongtabListener(box, popupMenu)
+addLongtabListener(box, popupMenu)</900)>
